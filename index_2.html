@@ -15,6 +15,9 @@
         <div>{{ html }}</div>
         <div v-html ="html"></div>
     </div>
+    <div id ="app3">
+        <a :href="url">Google</a> <!--v-bind-->
+    </div>
     <script>
         new Vue({
                 el: '#app',
@@ -32,6 +35,13 @@
             el: '#app2',
             data: {
                 html: '<h1>h1です</h1>'
+            }
+        })
+
+        new Vue({
+            el: '#app3',
+            data:{
+                url: 'https://google.com'
             }
         })
     </script>
